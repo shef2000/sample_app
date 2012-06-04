@@ -1,0 +1,102 @@
+2012-05-20T22:12:09+00:00 app[web.1]: [2012-05-20 22:12:09] INFO  WEBrick 1.3.1
+2012-05-20T22:12:09+00:00 app[web.1]: [2012-05-20 22:12:09] INFO  WEBrick::HTTPServer#start: pid=1 port=50606
+2012-05-20T22:12:09+00:00 app[web.1]: [2012-05-20 22:12:09] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-05-20T22:12:09+00:00 heroku[web.1]: State changed from starting to up
+2012-05-20T23:18:52+00:00 heroku[web.1]: Idling
+2012-05-20T23:18:55+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2012-05-20T23:18:55+00:00 app[web.1]: [2012-05-20 23:18:55] ERROR SignalException: SIGTERM
+2012-05-20T23:18:55+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+2012-05-20T23:19:05+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2012-05-20T23:19:05+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2012-05-20T23:19:06+00:00 heroku[web.1]: Process exited with status 137
+2012-05-20T23:19:06+00:00 heroku[web.1]: State changed from up to down
+2012-05-21T00:25:54+00:00 heroku[slugc]: Slug compilation started
+2012-05-21T00:26:53+00:00 heroku[api]: Release v5 created by ian.sheffield@gmail.com
+2012-05-21T00:26:53+00:00 heroku[api]: Deploy 794c9b8 by ian.sheffield@gmail.com
+2012-05-21T00:26:54+00:00 heroku[slugc]: Slug compilation finished
+2012-05-22T05:52:27+00:00 heroku[slugc]: Slug compilation started
+2012-05-22T05:53:36+00:00 heroku[api]: Release v6 created by ian.sheffield@gmail.com
+2012-05-22T05:53:36+00:00 heroku[api]: Deploy e76c6d0 by ian.sheffield@gmail.com
+2012-05-22T05:53:37+00:00 heroku[slugc]: Slug compilation finished
+2012-05-22T05:53:50+00:00 heroku[web.1]: Unidling
+2012-05-22T05:53:50+00:00 heroku[web.1]: State changed from down to created
+2012-05-22T05:53:51+00:00 heroku[web.1]: State changed from created to starting
+2012-05-22T05:53:54+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 6545`
+2012-05-22T05:53:58+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-05-22T05:53:58+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-05-22T05:54:01+00:00 app[web.1]: [2012-05-22 05:54:01] INFO  WEBrick 1.3.1
+2012-05-22T05:54:01+00:00 app[web.1]: [2012-05-22 05:54:01] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+
+2012-05-22T05:54:01+00:00 app[web.1]: [2012-05-22 05:54:01] INFO  WEBrick::HTTPServer#start: pid=1 port=6545
+2012-05-22T05:54:02+00:00 heroku[web.1]: State changed from starting to up
+2012-05-22T05:54:03+00:00 app[web.1]: => Booting WEBrick
+2012-05-22T05:54:03+00:00 app[web.1]: => Rails 3.2.3 application starting in production on http://0.0.0.0:6545
+2012-05-22T05:54:03+00:00 app[web.1]: => Call with -d to detach
+2012-05-22T05:54:03+00:00 app[web.1]: => Ctrl-C to shutdown server
+2012-05-22T05:54:03+00:00 app[web.1]: 
+2012-05-22T05:54:03+00:00 app[web.1]: 
+2012-05-22T05:54:03+00:00 app[web.1]: Started GET "/" for 216.19.188.137 at 2012-05-22 05:54:03 +0000
+2012-05-22T05:54:04+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-05-22T05:54:04+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (8.5ms)
+2012-05-22T05:54:04+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.3ms)
+2012-05-22T05:54:04+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.0ms)
+2012-05-22T05:54:04+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.6ms)
+2012-05-22T05:54:04+00:00 app[web.1]: Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+2012-05-22T05:54:04+00:00 heroku[router]: GET pure-sunrise-4260.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=1594ms status=200 bytes=1743
+2012-05-22T05:54:04+00:00 heroku[router]: GET pure-sunrise-4260.herokuapp.com/assets/application-d0bfc5ef7665102ca411bc67f203d2c1.css dyno=web.1 queue=0 wait=0ms service=14ms status=200 bytes=70052
+2012-05-22T05:54:04+00:00 heroku[router]: GET pure-sunrise-4260.herokuapp.com/assets/rails-be8732dac73d845ac5b142c8fb5f9fb0.png dyno=web.1 queue=0 wait=0ms service=7ms status=200 bytes=6646
+2012-05-22T05:54:04+00:00 heroku[router]: GET pure-sunrise-4260.herokuapp.com/assets/application-0d6c12dcc7b282cb415fbb376b8ddada.js dyno=web.1 queue=0 wait=0ms service=12ms status=200 bytes=99572
+2012-05-22T05:54:05+00:00 heroku[router]: GET pure-sunrise-4260.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=4ms status=200 bytes=0
+2012-05-22T05:54:08+00:00 app[web.1]: 
+2012-05-22T05:54:08+00:00 app[web.1]: 
+2012-05-22T05:54:08+00:00 app[web.1]: Started GET "/help" for 216.19.188.137 at 2012-05-22 05:54:08 +0000
+2012-05-22T05:54:08+00:00 app[web.1]: Processing by StaticPagesController#help as HTML
+2012-05-22T05:54:08+00:00 app[web.1]:   Rendered static_pages/help.html.erb within layouts/application (0.3ms)
+2012-05-22T05:54:08+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-05-22T05:54:08+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.7ms)
+2012-05-22T05:54:08+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-05-22T05:54:08+00:00 app[web.1]: Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+2012-05-22T05:54:08+00:00 heroku[router]: GET pure-sunrise-4260.herokuapp.com/help dyn
+o=web.1 queue=0 wait=0ms service=12ms status=200 bytes=1597
+2012-05-22T05:54:10+00:00 heroku[router]: GET pure-sunrise-4260.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=11ms status=304 bytes=0
+2012-05-22T05:54:10+00:00 app[web.1]: 
+2012-05-22T05:54:10+00:00 app[web.1]: 
+2012-05-22T05:54:10+00:00 app[web.1]: Started GET "/" for 216.19.188.137 at 2012-05-22 05:54:10 +0000
+2012-05-22T05:54:10+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2012-05-22T05:54:10+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+2012-05-22T05:54:10+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-05-22T05:54:10+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.5ms)
+2012-05-22T05:54:10+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-05-22T05:54:10+00:00 app[web.1]: Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+2012-05-22T05:54:12+00:00 app[web.1]: 
+2012-05-22T05:54:12+00:00 app[web.1]: 
+2012-05-22T05:54:12+00:00 app[web.1]: Started GET "/signup" for 216.19.188.137 at 2012-05-22 05:54:12 +0000
+2012-05-22T05:54:12+00:00 app[web.1]: Processing by UsersController#new as HTML
+2012-05-22T05:54:12+00:00 app[web.1]:   Rendered users/new.html.erb within layouts/application (0.3ms)
+2012-05-22T05:54:12+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-05-22T05:54:12+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.3ms)
+2012-05-22T05:54:12+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-05-22T05:54:12+00:00 app[web.1]: Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+2012-05-22T05:54:12+00:00 heroku[router]: GET pure-sunrise-4260.herokuapp.com/signup dyno=web.1 queue=0 wait=0ms service=45ms status=200 bytes=1413
+2012-05-22T05:54:13+00:00 app[web.1]: 
+2012-05-22T05:54:13+00:00 app[web.1]: 
+2012-05-22T05:54:13+00:00 app[web.1]: Started GET "/about" for 216.19.188.137 at 2012-05-22 05:54:13 +0000
+2012-05-22T05:54:13+00:00 app[web.1]: Processing by StaticPagesController#about as HTML
+2012-05-22T05:54:13+00:00 app[web.1]:   Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+2012-05-22T05:54:13+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-05-22T05:54:13+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.7ms)
+2012-05-22T05:54:13+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-05-22T05:54:13+00:00 app[web.1]: Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+2012-05-22T05:54:13+00:00 heroku[router]: GET pure-sunrise-4260.herokuapp.com/about dyno=web.1 queue=0 wait=0ms service=23ms status=200 bytes=1627
+2012-05-22T05:54:14+00:00 app[web.1]: 
+2012-05-22T05:54:14+00:00 app[web.1]: 
+2012-05-22T05:54:14+00:00 app[web.1]: Started GET "/contact" for 216.19.188.137 at 2012-05-22 05:54:14 +0000
+2012-05-22T05:54:14+00:00 app[web.1]: Processing by StaticPagesController#contact as HTML
+2012-05-22T05:54:14+00:00 app[web.1]:   Rendered static_pages/contact.html.erb within layouts/application (0.3ms)
+2012-05-22T05:54:14+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
+2012-05-22T05:54:14+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.3ms)
+2012-05-22T05:54:14+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.3ms)
+2012-05-22T05:54:14+00:00 app[web.1]: Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+2012-05-22T05:54:14+00:00 heroku[router]: GET pure-sunrise-4260.herokuapp.com/contact dyno=web.1 queue=0 wait=0ms service=12ms status=200 bytes=1498
+2012-05-22T05:54:14+00:00 heroku[router]: GET pure-sunrise-4260.herokuapp.com/assets/application-0d6c12dcc7b282cb415fbb376b8ddada.js dyno=web.1 queue=0 wait=0ms service=5ms status=304 bytes=0
+2012-05-22T05:54:14+00:00 heroku[router]: GET pure-sunrise-4260.herokuapp.com/assets/application-d0bfc5ef7665102ca411bc67f203d2c1.css dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
